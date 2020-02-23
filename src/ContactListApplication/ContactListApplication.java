@@ -19,6 +19,11 @@ public class ContactListApplication {
         contactList.add(new Person(firstName, lastName, contactNumber, emailAddress));
     }
 
+    /**
+     * This method will return contactList created
+     *
+     * @return the contactList created
+     */
     public ArrayList<Person> getContactList() {
         return contactList;
     }
