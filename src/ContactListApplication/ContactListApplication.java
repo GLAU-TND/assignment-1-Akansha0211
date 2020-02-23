@@ -18,13 +18,7 @@ public class ContactListApplication {
     public void add(String firstName, String secondName, String contactNumber, String emailAddress) {
         contactList.add(new Person(firstName, secondName, contactNumber, emailAddress));
     }
-//    public void addFirstName(String firstName){
-//        contactList.add(new Person(firstName));
-//    }
-//    public void addLastName(String secondName){
-//        contactList.add(new Person(secondName));
-//    }
-//
+
 
     /**
      * This method will return contactList created
