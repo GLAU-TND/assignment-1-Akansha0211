@@ -21,7 +21,12 @@ public class ContactListApplication {
         }
     }
 
-    public void search(String searchName) {
+    public Person search(String searchName) {
         int position = contactList.indexOf(new Person(searchName));
+        if (position >= 0) {
+            return contactList.get(position);
+        }
+        return null;
     }
+
 }
