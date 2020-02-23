@@ -29,4 +29,9 @@ public class ContactListApplication {
         return null;
     }
 
+    public void remove(int position) {
+        Person contact = contactList.get(position);
+        contactList.remove(position);
+    }
+
 }
