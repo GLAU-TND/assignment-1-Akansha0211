@@ -52,8 +52,25 @@ public class ContactListAppMain {
     public static void addContact() {
         System.out.println("You have chosen to add a new contact number");
         System.out.println("Please enter the name of the Person");
-//        ca.add();
+        System.out.print("First Name:");
+        ca.addFirstName(scanner.nextLine());
+        System.out.print("Last Name:");
+        ca.addSecondName(scanner.nextLine());
+        System.out.print("Contact Number:");
+        ca.addContactNumber(scanner.nextLine());
+        System.out.println("Would you like to add another contact number?(y/n");
+        String input = scanner.nextLine();
+        scanner.nextLine();
+        if (input.toLowerCase() == "y") {
+            ca.addContactNumber(scanner.nextLine());
+        }
 
+        System.out.println("Would you like to ad email address?(y/n)");
+        String input2 = scanner.nextLine();
+        scanner.nextLine();
+        if (input2.toLowerCase() == "y") {
+            ca.addEmailAddress(scanner.nextLine());
+        }
     }
 
     public static void searchContact() {
