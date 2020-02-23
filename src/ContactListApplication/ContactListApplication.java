@@ -11,13 +11,20 @@ public class ContactListApplication {
      * This method will add firstName ,lastName, contactName, emailAddress
      *
      * @param firstName     will add firstName of the Person in the contactList
-     * @param lastName      will add lastName of the Person in the contactList
+     * @param secondName      will add lastName of the Person in the contactList
      * @param contactNumber will add  contactNumber of the Person in the contactList
      * @param emailAddress  will add emailAddress of the Person in the contactList
      */
-    public void add(String firstName, String lastName, String contactNumber, String emailAddress) {
-        contactList.add(new Person(firstName, lastName, contactNumber, emailAddress));
+    public void add(String firstName, String secondName, String contactNumber, String emailAddress) {
+        contactList.add(new Person(firstName, secondName, contactNumber, emailAddress));
     }
+//    public void addFirstName(String firstName){
+//        contactList.add(new Person(firstName));
+//    }
+//    public void addLastName(String secondName){
+//        contactList.add(new Person(secondName));
+//    }
+//
 
     /**
      * This method will return contactList created
@@ -53,7 +60,6 @@ public class ContactListApplication {
 
     /**
      * This method will remove a particular contact from the contactList according to the position
-     *
      * @param position the position from which contact is to be removed
      */
 

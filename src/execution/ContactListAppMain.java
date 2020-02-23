@@ -49,6 +49,8 @@ public class ContactListAppMain {
     }
 
     public static void addContact() {
+        System.out.println("You have chosen to add a new contact number");
+        System.out.println("Please enter the name of the Person");
 
     }
 
