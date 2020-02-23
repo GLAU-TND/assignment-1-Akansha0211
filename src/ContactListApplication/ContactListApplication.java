@@ -31,6 +31,10 @@ public class ContactListApplication {
         contactList.add(new Person(contactNumber));
     }
 
+    public void addEmailAddress(String emailAAddress) {
+        contactList.add(new Person(emailAAddress));
+    }
+
 
 
     /**
