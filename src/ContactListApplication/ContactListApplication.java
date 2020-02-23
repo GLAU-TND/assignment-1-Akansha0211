@@ -37,6 +37,12 @@ public class ContactListApplication {
         }
     }
 
+    /**
+     * This method will search for cotactList according to the firstName
+     *
+     * @param searchName the firstName to be searched for in the contactList
+     * @return position if searchName(i.e firstName) found  and will return null if the searchName is not found
+     */
     public Person search(String searchName) {
         int position = contactList.indexOf(new Person(searchName));
         if (position >= 0) {
