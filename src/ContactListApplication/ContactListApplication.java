@@ -23,6 +23,11 @@ public class ContactListApplication {
         contactList.add(new Person(firstName));
     }
 
+    public void addSecondName(String secondName) {
+        contactList.add(new Person(secondName));
+    }
+
+
 
 
     /**
