@@ -80,6 +80,6 @@ public class ContactListApplication {
     public void remove(int position) {
         Person contact = contactList.get(position);
         contactList.remove(position);
-
+        System.out.println(contact + "'s contact deleted from the list!");
     }
 }

@@ -82,6 +82,11 @@ public class ContactListAppMain {
     }
 
     public static void removeContact() {
+        System.out.println("Here are all your contacts:");
+        ca.print();
+        System.out.println("Press the number against the contact to delete it :");
+        int index = scanner.nextInt();
+        ca.remove(index);
 
     }
 
