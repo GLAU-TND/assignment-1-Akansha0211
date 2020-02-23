@@ -64,7 +64,10 @@ public class ContactListApplication {
     public Person search(String searchName) {
         int position = contactList.indexOf(new Person(searchName));
         if (position >= 0) {
+            System.out.println(" 1 match found");
+            System.out.println("----- * ----- * ----- * -----");
             return contactList.get(position);
+
         }
         return null;
     }
@@ -77,5 +80,6 @@ public class ContactListApplication {
     public void remove(int position) {
         Person contact = contactList.get(position);
         contactList.remove(position);
+
     }
 }

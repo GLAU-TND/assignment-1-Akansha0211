@@ -74,6 +74,10 @@ public class ContactListAppMain {
     }
 
     public static void searchContact() {
+        System.out.println("You could search for a contact menu from their first Names:");
+        String firstName = scanner.nextLine();
+        scanner.nextLine();
+        ca.search(firstName);
 
     }
 
