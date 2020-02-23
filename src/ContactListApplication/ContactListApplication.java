@@ -51,6 +51,12 @@ public class ContactListApplication {
         return null;
     }
 
+    /**
+     * This method will remove a particular contact from the contactList according to the position
+     *
+     * @param position the position from which contact is to be removed
+     */
+
     public void remove(int position) {
         Person contact = contactList.get(position);
         contactList.remove(position);
