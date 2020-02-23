@@ -27,6 +27,9 @@ public class ContactListApplication {
         contactList.add(new Person(secondName));
     }
 
+    public void addContactNumber(String contactNumber) {
+        contactList.add(new Person(contactNumber));
+    }
 
 
 
