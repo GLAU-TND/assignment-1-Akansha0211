@@ -14,4 +14,10 @@ public class ContactListApplication {
     public ArrayList<Person> getContactList() {
         return contactList;
     }
+
+    public void print() {
+        for (int i = 0; i < contactList.size(); i++) {
+            System.out.println(contactList.get(i));
+        }
+    }
 }
