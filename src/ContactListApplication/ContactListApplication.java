@@ -20,4 +20,8 @@ public class ContactListApplication {
             System.out.println(contactList.get(i));
         }
     }
+
+    public void search(String searchName) {
+        int position = contactList.indexOf(new Person(searchName));
+    }
 }
