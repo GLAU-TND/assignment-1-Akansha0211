@@ -7,6 +7,14 @@ import java.util.ArrayList;
 public class ContactListApplication {
     private ArrayList<Person> contactList = new ArrayList<>();
 
+    /**
+     * This method will add firstName ,lastName, contactName, emailAddress
+     *
+     * @param firstName     will add firstName of the Person in the contactList
+     * @param lastName      will add lastName of the Person in the contactList
+     * @param contactNumber will add  contactNumber of the Person in the contactList
+     * @param emailAddress  will add emailAddress of the Person in the contactList
+     */
     public void add(String firstName, String lastName, String contactNumber, String emailAddress) {
         contactList.add(new Person(firstName, lastName, contactNumber, emailAddress));
     }
@@ -33,5 +41,4 @@ public class ContactListApplication {
         Person contact = contactList.get(position);
         contactList.remove(position);
     }
-
 }

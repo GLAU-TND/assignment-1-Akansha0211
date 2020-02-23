@@ -8,9 +8,6 @@ public class Person {
 
     public Person(String firstName, String lastName, String contactNumber, String emailAddress) {
     }
-
     public Person(String searchName) {
     }
-
-
 }
