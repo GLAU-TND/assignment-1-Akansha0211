@@ -28,6 +28,9 @@ public class ContactListApplication {
         return contactList;
     }
 
+    /**
+     * This method will print the cntactList
+     */
     public void print() {
         for (int i = 0; i < contactList.size(); i++) {
             System.out.println(contactList.get(i));
