@@ -10,7 +10,6 @@ public class Person {
     }
 
     public Person(String firstName) {
-        this.firstName = firstName;
     }
 
 
