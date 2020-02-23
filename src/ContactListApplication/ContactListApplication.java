@@ -10,4 +10,8 @@ public class ContactListApplication {
     public void add(String firstName, String lastName, String contactNumber, String emailAddress) {
         contactList.add(new Person(firstName, lastName, contactNumber, emailAddress));
     }
+
+    public ArrayList<Person> getContactList() {
+        return contactList;
+    }
 }
